@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;1,100;1,300;1,600;1,900&display=swap');
+
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+}
+
+body {
+	color: #333;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+a {
+	color: rgb(0,100,200);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: rgb(0,80,160);
+}
+
+label {
+	display: block;
+}
+
+input, button, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	-webkit-padding: 0.4em 0;
+	padding: 0.4em;
+	margin: 0 0 0.5em 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+
+input{
+	border: 2px solid crimson;
+	background: #fa7e7e;
+	color: rgb(146, 33, 33);
+	border-radius: 5px;
+}
+
+
+input:disabled {
+	color: #ccc;
+}
+
+button {
+	color: rgb(165, 21, 11);
+	background-color: #fa7e7e;
+	outline: none;
+	border: 0 solid;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	font-weight: bold;
+}
+
+button:disabled {
+	color: #999;
+}
+
+button:not(:disabled):active {
+	background-color: rgb(214, 31, 25);
+}
+
+button:focus {
+	border-color: rgb(170, 31, 21);
+}
+
+.head{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: 900;
+	margin: 10px 10px;
+}
+
+.head img{
+	height: 30px;
+}
+
+.count{
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	margin: 10px 10px;
+}
+
+.count-alt, .count-noalt{
+	font-size: 40px;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.count-alt{
+	color: rgb(69, 155, 69);
+}
+
+.count-noalt{
+	color: rgb(206, 84, 63);
+}
+
+.count-alt-text, .count-noalt-text{
+	font-weight: bold;
+}
+
+.alt{
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.lds-dual-ring {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+  }
+  .lds-dual-ring:after {
+	content: " ";
+	display: block;
+	width: 64px;
+	height: 64px;
+	margin: 8px;
+	border-radius: 50%;
+	border: 6px solid rgb(207, 14, 14);
+	border-color: rgb(211, 46, 46) transparent rgb(216, 40, 40) transparent;
+	animation: lds-dual-ring 1.2s linear infinite;
+  }
+
+  @keyframes lds-dual-ring {
+	0% {
+	  transform: rotate(0deg);
+	}
+	100% {
+	  transform: rotate(360deg);
+	}
+  }
+
+  .loading{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	color: rgb(221, 106, 52);
+	margin-bottom: 30px;
+  }
+
+  .alt-head{
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+  }
+
+  .result{
+	display: flex;
+	justify-content:  center;
+	gap: 10px;
+	margin-top: 20px;
+	flex-wrap: wrap;
+  }
+
+  .image{
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+	margin: 5px 5px;
+  }
+
+  .image img{
+	/* height: 30px; */
+	max-width: 100px;
+  }
+
+  .status{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* margin: 10px 10px; */
+  margin-top: 20px;
+  background: #fa7e7e;
+  color: rgb(82, 4, 4);
+  padding: 10px;
+  font-size: 17px;
+  }
+
+  .status img{
+	height: 30px;
+  }
+
+  .info img{
+	height: 18px;
+  }
+
+  .alt-head{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin: 10px;
+	font-size: 21px;
+	padding: 10px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	border-radius: 5px;
+  }
+
+  .alt-head img{
+	height: 30px;
+  }
+
+  .success{
+	background: rgba(108, 108, 231, 0.582);
+  }
+
+  .garbage{
+	max-width: 200px;
+	overflow-y: scroll;
+  }
+
+  .res{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+  }
+  /* width */
+::-webkit-scrollbar {
+	width: 4px;
+	height: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+	border-radius: 50px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: linear-gradient(45deg, rgb(61, 14, 189), rgb(224, 59, 155));
+	border-radius: 50px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+  }
+
+  .a11y{
+  margin-top: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(137, 43, 226, 0.411);
+  border-radius: 10px;
+  }
+  .a11y img{
+	height: 80px;
+  }
+
+  .footer{
+	margin-top: 50px;
+	font-size: 12px;
+	border-top: 1px solid rgb(201, 206, 201);
+	padding: 10px;
+  }
+  
